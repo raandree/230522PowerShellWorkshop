@@ -11,28 +11,15 @@
 
 - Code Quality
 
-For ensuring code quality refer to [PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer)
+    For ensuring code quality refer to [PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer)
 
 - How to prevent from running code accidentally?
 
     Put a `return` statement at the beginning or implement `WhatIf` feature.
 
-https://github.com/raandree/PowerShellTraining/blob/main/Functions/Readme.md
+- More info on how to write functions can be found here:
 
---------
-
-reading group membersip from local token
-
-$wi = [System.Security.Principal.WindowsIdentity]::GetCurrent()
-
-$wi.Groups.Value -contains 'S-1-5-32-544'
-
-$wi.Groups | ForEach-Object {
-    $_.Translate([System.Security.Principal.NTAccount])
-}
-
-
---------------
+    https://github.com/raandree/PowerShellTraining/blob/main/Functions/Readme.md
 
 NTFSSecurity
 
